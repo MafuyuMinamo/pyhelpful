@@ -1,0 +1,13 @@
+# python cache
+__pycache__/
+
+# venv
+venv/
+.venv/
+.env/
+
+# test
+.pytest_cache/
+
+# vscode
+.vscode/
