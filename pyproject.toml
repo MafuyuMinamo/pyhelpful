@@ -7,4 +7,4 @@ dependencies =  []
 [tool.pytest.ini_options]
 pythonpath = "pyhelpful"
 testpaths = ["tests",]
-
+addopts = "--color=yes --log-cli-level=DEBUG"
