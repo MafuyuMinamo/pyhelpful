@@ -38,6 +38,7 @@ def dialog_file_picker(init_dir: str = "", heading: str = "", types: str = "*") 
         str | None: 成功したら 取得したファイルパス(str)を返す。取得できなかった場合は None
     """
     root = Tk()
+    root.attributes('-topmost', True)
     root.withdraw()
     if init_dir == "":
         initialdir = os.getcwd()
@@ -73,6 +74,7 @@ def dialog_folder_picker(init_dir: str = "") -> str | None:
         str | None: 成功したら 取得したフォルダパス(str)を返す。取得できなかった場合は None
     """
     root = Tk()
+    root.attributes('-topmost', True)
     root.withdraw()
     if init_dir == "":
         initialdir = os.getcwd()
